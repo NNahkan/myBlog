@@ -1,6 +1,6 @@
 import { getBlog } from "@/app/lib/data"
 
-export default async function Page({ params }) {
+export default async function Page({ params }: { params: { id: string } }) {
 
 	const blogId = params.id
 	const post = await getBlog(blogId)
@@ -13,6 +13,7 @@ export default async function Page({ params }) {
 					<p>{post.author?.name}</p>
 				</div>
 			)}
+			<h1 className="text-4xl">COMMENTS</h1>
 		</>
 	)
 }
