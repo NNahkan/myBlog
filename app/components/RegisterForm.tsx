@@ -2,7 +2,7 @@
 
 import { FormEvent } from "react"
 
-export default function Form() {
+export default function RegisterForm() {
 	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
 		const formData = new FormData(e.currentTarget)

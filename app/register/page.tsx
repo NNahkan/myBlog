@@ -1,12 +1,12 @@
-import React, { FormEvent } from 'react'
-import Form from '../components/form'
+import React from 'react'
+import RegisterForm from '../components/RegisterForm'
 
 
 
 const RegisterPage = () => {
 	return (
 
-		<Form />
+		<RegisterForm />
 	)
 }
 
